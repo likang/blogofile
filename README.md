@@ -47,4 +47,4 @@ Firstly, you should create a repository named 'username.github.com' on Github.
 You may need to modify the CNAME file if you directed your domain at Github Page. [more](http://pages.github.com)
 Important!
 ---
-Never run 'blogofile build' after you deploy the static site to Github Pages! It will remove all the information of git repository. Use 'sh _build.sh' instead.
+Never run 'blogofile build' after you deploy the static site to Github Pages! It will remove '.git' folder and '.gitignore' file in your site folder. So please run 'sh _build.sh' instead.
