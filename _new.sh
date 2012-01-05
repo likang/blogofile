@@ -1,7 +1,7 @@
 #!/bin/sh
 if [ $# -ne 1 ]
 then
-  echo "usage: ./_new.sh 'the title'"
+  echo "No post title! usage: _new.sh 'the title'"
   exit 1;
 fi
 

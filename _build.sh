@@ -1,6 +1,9 @@
 #! /bin/sh
+mkdir -p _tmp
+mv -f _site/.[^.]* _tmp >> /dev/null 2>&1
+
 blogofile build
-mkdir -p _website
-rm -rf _website/*
-mv -f _site/* _website/
-rm -rf _site
+
+mv -f _tmp/.[^.]* _site >> /dev/null 2>&1
+rm -rf _tmp
+
