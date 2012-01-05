@@ -6,5 +6,7 @@ then
 fi
 
 mkdir -p _posts
+filepath=_posts/`date +%G-%m-%d`-${1// /-}.markdown
 echo "---\ntitle: $1 \ndate: `date '+%G/%m/%d %H:%M:%S'`\ncategories:\n---" \
-  >> _posts/`date +%G-%m-%d`-${1// /-}.markdown
+  >> $filepath
+echo "new post: $filepath"
