@@ -6,7 +6,7 @@ categories: Tech
 
 Octopress 蛮好用的。但还是有几个原因让我迁移：
 
-*  Octopress有点重，我只是想要一个简简单单的静态文件博客，可以灵活的定制，不需要太多功能，Bogofile 足够简单和灵活。
+*  Octopress有点重，我只是想要一个简简单单的静态文件博客，可以灵活的定制，不需要太多功能，Blogofile 足够简单和灵活。
 *  Blogofile是基于Python的，也就意味着对我来说它的插件和模板系统上手很快。事实上，Blogofile init之后，我立刻就把它的URL生成方式改成了Octopress的方式，即由文章的文件名来指定文章路径。
 *  Octopress的Ruby环境安装起来实在不方便，可能是我太笨。可Blogofile只需easy\_install一下就OK了。
 

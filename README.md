@@ -16,25 +16,33 @@ Get Blogofile
 
 You can get more help from [here](http://blogofile.com).
 
-Clone the template
-------------------
+Fork the template on Github
+---------------------------
 
-    git@github.com:likang/blogofile.git
+    git clone git@github.com:[yourname]/blogofile.git
     cd blogofile
 
+Remove all my posts
+-------------------
+
+    rm _posts/*  
+
+or just keep them as examples :D
+
 New a post
----
+----------
 
     sh _new.sh 'the post title'
 
+
 Build & Run
----
+-----------
 
     sh _build.sh
     sh _serve.sh
 
 Deploy site to Github Pages
----
+---------------------------
 Firstly, you should create a repository named 'username.github.com' on Github.
 
     cd _site
@@ -46,5 +54,5 @@ Firstly, you should create a repository named 'username.github.com' on Github.
 
 You may need to modify the CNAME file if you directed your domain at Github Page. [more](http://pages.github.com)
 Important!
----
+----------
 Never run 'blogofile build' after you deploy the static site to Github Pages! It will remove '.git' folder and '.gitignore' file in your site folder. So please run 'sh _build.sh' instead.
