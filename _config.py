@@ -38,11 +38,11 @@ blog.path = "/blog"
 
 ## blog_name -- Your Blog's name.
 # This is used repeatedly in default blog templates
-blog.name = "K.I.S Bear"
+blog.name = u"东篱"
 
 ## blog_description -- A short one line description of the blog
 # used in the RSS/Atom feeds.
-blog.description = "Keep It Simple"
+blog.description = u"文字打败时间"
 
 ## blog_timezone -- the timezone that you normally write your blog posts from
 blog.timezone = "Asia/Shanghai"
