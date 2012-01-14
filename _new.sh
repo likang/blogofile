@@ -6,7 +6,7 @@ then
 fi
 
 mkdir -p _posts
-filepath=_posts/`date +%G-%m-%d`-${1// /-}.markdown
+filepath=_posts/`date +%G-%m-%d`-`echo $1|tr ' ' '-'`.markdown
 
 echo "\
 ---
