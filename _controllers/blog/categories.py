@@ -32,11 +32,6 @@ def write_categories():
     for post in blog.posts:
         categories.update(post.categories)
     for category, category_posts in blog.categorized_posts.items():
-        #Write category RSS feed
-        atom_path = bf.util.fs_site_path_helper(
-            blog.path, blog.category_dir,
-            category.url_name, "feed")
-        feed.write_feed(category_posts, atom_path, "atom.mako")
         page_num = 1
         while True:
             path = bf.util.path_join(root, category.url_name,
