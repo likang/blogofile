@@ -1,7 +1,7 @@
 ---
 title: 理想的手机
 date: 2011/12/03 22:46:00
-categories: Life, Mobile
+categories: Life
 ---
 外观简洁优雅，像iPod classic那样。
 
