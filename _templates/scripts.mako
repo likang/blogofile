@@ -5,6 +5,7 @@
             var codes = document.getElementsByTagName("code");
             for (var i=0; i < codes.length; i++) {
                 codes[i].setAttribute("class", "prettyprint");
+                codes[i].setAttribute("className", "prettyprint"); // for IE
             }
             prettyPrint();
         }
