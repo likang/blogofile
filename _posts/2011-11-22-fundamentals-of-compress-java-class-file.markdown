@@ -8,7 +8,8 @@ draft: true
 
 对class文件的压缩大体上可以分为两个方向，一是简单的将长变量名/方法名等改成短的，并尽量减少class文件中附加的额外信息(如行号信息，参数名等)；二是通过早期编译技术，将无用或者无效的代码去除等操作，这一部分跟<code>编译器优化</code>基本重合，所以就不展开讨论了，我们只简单的看看字符层面的压缩。
 
-##class文件格式
+__class文件格式__
+
 参考 [The Class File Format](http://java.sun.com/docs/books/jvms/second_edition/html/ClassFile.doc.html) 我们可以知道class文件基本构成为:  
 
     ClassFile {
@@ -32,11 +33,12 @@ draft: true
 
 简单说明下关键部分：
   
-* constant_pool  
+* constant\_pool  
   主要是两大类数据：字面量(Literal)和符号引用(Symbolic References)。字面量就是一些常量值，如字符串的值，final的常量值等，符号引用就是各种描述符，如字段名、方法名等。  
   值得注意的是，常量池里的符号引用被class文件后面的多个模块引用，如fields里的字段名、methods里的方法名等都引用自常量池，也就是说这些地方只保留到常量池的一个引用，不会直接存储常量。
 * attributes  
  这又是一个大杂烩的地方，被fields,methods等使用。来看看具体
 
-##压缩
+__压缩__
+
 由此可知如果我们只从字符层面看的化，能压缩的就是constant_pool常量池中的符号引用部分、attributes中可以去掉的附加属性，于是

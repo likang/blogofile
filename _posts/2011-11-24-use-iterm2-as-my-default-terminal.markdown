@@ -7,7 +7,7 @@ categories: Mac
 
 iTerm2是从iTerm的基础上开发的，只不过iTerm不再更新，所以这位George Nachman兄就接手继续做起来，修复了很多Bug，一天用下来还是蛮稳定的，而且功能非常强大，在此表示遥远的感谢:)
 
-###功能介绍
+__功能介绍__
 
 <table>
 <tr>
