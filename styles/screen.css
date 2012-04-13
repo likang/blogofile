@@ -138,11 +138,14 @@ cite
 pre
 {
 	font-family:courier,monospace;
-	border-bottom:1px solid #ccc;
-	font-size:0.9em;
+	border-left:1px solid #ccc;
 	line-height:150%;
+    padding-left:1em;
 	overflow: auto;
-	background:#fffcdc;
+}
+pre code
+{
+    font-size:115%;
 }
 acronym, abbr
 {

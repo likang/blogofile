@@ -17,6 +17,7 @@
         ${self.footer()}
       </div> <!-- End Footer -->
     </div> <!-- End Content -->
+    ${self.scripts()}
   </body>
 </html>
 <%def name="head()">
@@ -27,4 +28,7 @@
 </%def>
 <%def name="footer()">
   <%include file="footer.mako" />
+</%def>
+<%def name="scripts()">
+  <%include file="scripts.mako" />
 </%def>

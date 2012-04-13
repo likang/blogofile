@@ -3,3 +3,4 @@
 <link rel="alternate" type="application/atom+xml" title="Atom 1.0"
 href="${bf.util.site_path_helper(bf.config.blog.path,'/feed/atom')}" />
 <link rel='stylesheet' href='/styles/screen.css' type='text/css' />
+<link rel='stylesheet' href='/styles/prettify.css' type='text/css' />
