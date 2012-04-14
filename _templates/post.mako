@@ -24,6 +24,7 @@ ${u" · ".join(category_links)}
 
     ${self.post_prose(post)}
 
+    <div class="separator"></div>
 </div>
 
 <%def name="post_prose(post)">
