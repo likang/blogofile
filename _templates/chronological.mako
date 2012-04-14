@@ -7,17 +7,16 @@
 % endfor
 <div id="pagination">
 % if prev_link:
- <p class="next right">
+ <p class="alignright">
    <a href="${prev_link}">NEWER POSTS »</a>
  </p>
 % endif
 % if prev_link and next_link:
-  --  
 % endif
 % if next_link:
- <p class="previous left">
+ <p class="alignleft">
    <a href="${next_link}">« OLDER POSTS</a>
  </p>
 % endif
 </div>
-<div class="clear"></div>
+<div class="break"></div>

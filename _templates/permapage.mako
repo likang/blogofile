@@ -3,7 +3,7 @@
 
 <div id="pagination">
 % if prev_post:
- <p class="previous left">
+ <p class="alignleft">
    « <a href="${prev_post.permapath()}">${prev_post.title}</a>
  </p>
 % endif
@@ -11,12 +11,12 @@
   --
 % endif
 % if next_post:
- <p class="next right">
+ <p class="alignright">
    <a href="${next_post.permapath()}">${next_post.title}</a> »
  </p>
 % endif
 </div>
-<div class="clear"></div>
+<div class="break"></div>
 
 
 <div id="disqus_thread"></div>

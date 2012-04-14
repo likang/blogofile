@@ -7,28 +7,23 @@
     ${self.head()}
   </head>
   <body>
-    <div id="wrapper">
-      <div id="content">
+    <div id="page">
+      ${self.header()}
+      <div id="content" class="single">
         ${next.body()}
       </div><!-- End Main Block -->
-      ${self.sidebar()}
-      <div class="clear"></div><!-- End Sitebar -->
-      <div id="footer">
+      <div id="footer" class="single">
         ${self.footer()}
       </div> <!-- End Footer -->
     </div> <!-- End Content -->
-    ${self.scripts()}
   </body>
 </html>
 <%def name="head()">
   <%include file="head.mako" />
 </%def>
-<%def name="sidebar()">
-  <%include file="sidebar.mako" />
+<%def name="header()">
+  <%include file="header.mako" />
 </%def>
 <%def name="footer()">
   <%include file="footer.mako" />
-</%def>
-<%def name="scripts()">
-  <%include file="scripts.mako" />
 </%def>

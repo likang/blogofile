@@ -1,8 +1,10 @@
 <%page args="post"/>
-<div class="hentry">
-  <h3 class="entry-title">
+<div class="post">
+  <h2>
     <a href="${post.permapath()}" rel="bookmark" title="Permanent Link to ${post.title}">${post.title}</a> 
-    <abbr> · ${post.date.strftime("%Y/%m/%d")} · 
+  </h2>
+  <h4 style="margin-top: 0px;">
+    ${post.date.strftime("%Y/%m/%d")} · 
 
 <% 
    category_links = []
@@ -18,9 +20,7 @@ ${u" · ".join(category_links)}
  | <a href="${post.permalink}#disqus_thread">Comments</a>
 % endif
 
-</abbr> 
-
-  </h3>
+  </h4>
 
     ${self.post_prose(post)}
 
