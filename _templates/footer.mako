@@ -29,8 +29,7 @@ href="http://${bf.config.blog.disqus.name}.disqus.com/latest.rss">Comments</a>.
         if (!document.getElementsByTagName) return;
         var codes = document.getElementsByTagName("code");
         for (var i=0; i < codes.length; i++) {
-            codes[i].setAttribute("class", "prettyprint");
-            codes[i].setAttribute("className", "prettyprint"); // for IE
+            codes[i].className = "prettyprint";
         }
         prettyPrint();
     }
