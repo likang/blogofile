@@ -8,9 +8,9 @@
 
 % if len(bf.config.blog.posts) > bf.config.blog.posts_per_page:
 <div id="pagination">
-  <p class="previous left">
+  <p class="alignleft">
     <a href="${bf.util.site_path_helper(
-      bf.config.blog.path, bf.config.blog.pagination_dir+'/2')}"> « OLDER POSTS</a>
+      bf.config.blog.path, bf.config.blog.pagination_dir+'/2')}">« 旧文</a>
   </p>
 </div>
 <div class="clear"></div>

@@ -8,14 +8,14 @@
 <div id="pagination">
 % if prev_link:
  <p class="alignright">
-   <a href="${prev_link}">NEWER POSTS »</a>
+   <a href="${prev_link}">新篇 »</a>
  </p>
 % endif
 % if prev_link and next_link:
 % endif
 % if next_link:
  <p class="alignleft">
-   <a href="${next_link}">« OLDER POSTS</a>
+   <a href="${next_link}">« 旧文</a>
  </p>
 % endif
 </div>
