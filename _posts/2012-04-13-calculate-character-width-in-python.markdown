@@ -13,7 +13,7 @@ categories: Python
 
 因此无法简单的使用这种方式来计算宽度。
 
-__GBK decode__
+###GBK decode
 
 首先我想到[GBK](http://zh.wikipedia.org/zh/GBK)编码，00–7F范围内的字符是一字节编码，其余是双字节编码，正好与字符的宽度大体一致，于是有了这样的投机取巧的办法（假设取8个宽度）：
 
@@ -30,7 +30,7 @@ __GBK decode__
 
 虽然初步解决了问题，但是这样做的硬伤很明显。首先代码不优雅，以试错的方式运行；其次GBK所能表示的字符有限，对于大量GBK编码以外的字符无法支持。
 
-__East_Asian_Width__
+###East_Asian_Width
 
 徘徊很久之后，偶然发现 [Unicode Character Database](http://www.unicode.org/reports/tr44/tr44-4.html)标准中有East_Asian_Width 属性，并有以下可能值：
 
@@ -63,7 +63,7 @@ __East_Asian_Width__
 
 在大多数等宽字体中，中文双引号都是只占一位宽的，如果一行里有多个中文双引号，则累加的误判宽度将会使截取效果大打折扣，无疑这也不是最好的办法。
 
-__urwid的解决方案__
+###urwid的解决方案
 
 [urwid](http://excess.org/urwid/)是一个成熟的python终端UI库，它在curses的基础之上包装了类似HTML的控件用以显示文本内容，如果有这方面的开发需求，非常推荐此库，比直接使用curses库方便很多，非常棒的是它对unicode的文本宽度截取非常准确，让我大为惊讶，于是翻开它的源码一探究竟，文本宽度计算方面其核心代码如下：
 

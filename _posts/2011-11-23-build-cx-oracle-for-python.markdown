@@ -7,7 +7,7 @@ categories: Python
 cx\_Oracle 是Python的一个扩展模块，提供符合Python数据库API规范的Oracle访问支持，是Python下访问Oracle的利器，不过鉴于其版本众多，很多人在安装上就遇到了障碍，我这里简单记录一下。  
 最普适的方法就是编译安装了，官方有详尽的[安装文档](http://cx-oracle.sourceforge.net/BUILD.txt)，我这里基本只是翻译。
 
-__准备__
+###准备
 
 首先下载两个东西：
   
@@ -28,7 +28,7 @@ MAC OS X 下还需设置另一个环境变量
     cd $ORACLE_HOME
     ln -s libclntsh.so.x.x libclntsh.so
 
-__编译安装__
+###编译安装
 
 接下来非常简单，进入你的cx\_Oracle源码目录后执行以下两条语句就OK了
 
@@ -46,7 +46,7 @@ __编译安装__
 
 没有异常的话就说明安装成功了。
 
-__简单的使用__
+###简单的使用
 
     #!/usr/bin/python
     # -*- encoding: utf-8 -*-
