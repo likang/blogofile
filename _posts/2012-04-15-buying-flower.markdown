@@ -1,7 +1,7 @@
 ---
 title: 买花记
 date: 2012/04/15 16:54:47
-categories: Life, Flower
+categories: Life
 ---
 我在肇家浜路上径直的走着，目的地是一个盆栽花店，却不知道应该在哪个路口左拐。
 
