@@ -1,5 +1,5 @@
 ---
-title: 我一扇窗
+title: 我有一扇窗
 date: 2012/04/12 23:56:09
 categories: Life
 ---
