@@ -244,7 +244,7 @@ class Post(object):
         except KeyError:
             pass
         try:
-            self.categories = set([Category(x.strip()) for x in \
+            self.categories = set([Category(x.strip().lower()) for x in \
                                        y['categories'].split(",")])
         except:
             pass
