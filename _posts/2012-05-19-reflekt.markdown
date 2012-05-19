@@ -1,7 +1,7 @@
 ---
 title: Reflekt 
 date: 2012/05/19 13:41:19
-categories: python, project
+categories: Python, Project
 ---
 公司之前有做过类似Q卡的项目，现在不做了，于是闲置下来很多机器，就是一般挂在电梯里或者便利店里的那种。于是团队决定拉回来几个放在办公室玩玩。
 
