@@ -2,6 +2,7 @@
 title: 电影万岁 
 date: 2012/06/12 00:31:46
 categories: Life
+draft: true
 ---
 不是为电影歌功颂德，而是一部名叫《电影万岁》的短片。
 
