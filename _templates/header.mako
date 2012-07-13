@@ -2,6 +2,7 @@
         <ul>
           <li><a href="${bf.util.site_path_helper()}">首页</a></li>
           <li><a href="${bf.util.site_path_helper(bf.config.blog.path)}">归档</a></li>
+          <li><a href="${bf.util.site_path_helper('projects')}">项目</a></li>
           <li><a href="${bf.util.site_path_helper(bf.config.blog.path,'feed')}">订阅</a></li>
           <li><a href="https://github.com/likang">GITHUB</a></li>
         </ul>

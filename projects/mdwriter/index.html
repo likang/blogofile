@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Markdown Writer</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    </head>
+    <body>
+        <div id="bg"><img src="images/bg0.jpg" id="bg-img"></div>
+        <div id="md-card" class="card">
+            <div id="md-border"></div>
+            <textarea id="md"></textarea>
+        </div>
+        <div id="preview" class="card"> i'm place holder</div>
+
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script type="text/javascript">
+        var md_border = $("#md-border")
+        var md_card = $("#md-card")
+        var md = $("#md")
+        var preview = $("#preview")
+        
+        md.focus()
+        preview.hide()
+
+        $(document).keydown(function(e){
+            //press esc
+            if(e.which == 27){
+                if(md_card.is(":hidden")){
+                    md_card.fadeIn(1000)
+                    preview.fadeOut(1000)
+                    md.focus()
+                }else{
+                    md_card.fadeOut(1000)
+                    preview.fadeIn(1000)
+                }
+            }
+        })
+
+        var fade_md_border = function(delay, duration, opacity){
+            return setTimeout(function(){
+                md_border.animate({opacity: opacity}, duration)
+            }, delay)
+        }
+
+        var on_mouse_stop = fade_md_border(2000, 1000, 0)
+        
+        $(document).mousemove(function(e){
+            // console.log(md_border.queue("fx").length)
+            if(md.is(":visible") && !md.is(":animated")){
+                if(md_border.css("opacity") == 0){
+                    fade_md_border(0, 1000, 1)
+                }else{
+                    clearTimeout(on_mouse_stop)
+                    on_mouse_stop = fade_md_border(2000, 1000, 0)
+                }
+            }
+        })
+        </script>
+    </body>
+</html>
