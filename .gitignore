@@ -2,3 +2,4 @@ _site
 *.pyc
 .svn
 .DS_Store
+*.swp
