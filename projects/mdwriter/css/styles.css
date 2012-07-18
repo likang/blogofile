@@ -1,5 +1,7 @@
-html {
-   font: 12px "Microsoft YaHei","Helvetica Neue",Helvetica,"Lucida Grande","Luxi Sans",Arial,sans-serif;
+body {
+   /*font: 62.5% "Microsoft YaHei","Helvetica Neue",Helvetica,"Lucida Grande","Luxi Sans",Arial,sans-serif;*/
+   /*font-size: 62.5%*/
+   font-family: "Monaco";
    word-wrap: break-word;
    -ms-word-wrap: break-word;
    text-align: justify;
@@ -8,10 +10,7 @@ html {
    -moz-hyphens: auto;
    -ms-hyphens: auto;
    hyphens: auto;
-}
-
-body {
-   background-color: #f2f2f2
+   background-color: #f2f2f2;
 }
 
 #bg {
@@ -29,40 +28,26 @@ body {
     border:0;
 }
 
-.card {
-    position: fixed; 
-    width:40%;
-    height: 80%;
-    left:30%;
-    top:10%;
+.editor-frame {
+  position: fixed;
+  height: 80%;
+  width: 50em;
+  top: 10%;
+  left: 50%;
+  margin-left: -25em;
 }
 
-.scrollbar-mask {
-    height:100%;
-    overflow: hidden;
+#manual {
+  display: none
 }
 
-.scrollbar-offset {
-    /*overflow-y: scroll;*/
-    height:100%;
-    width:100%;
-    position: relative;
+#preview {
+  z-index: -99;
 }
 
-#md-card {
-    padding: 1em 0 1em 0;
-}
-
-#md-border {
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    border-style:dashed;
-    border-width:1px;
-    border-color:gray;
-    z-index: -990;
+.box {
+  width: 200px;
+  height: 200px;
 }
 
 #md-text {
@@ -77,3 +62,12 @@ body {
 #preview-card {
     z-index:-995;
 }
+/*
+.CodeMirror,
+.CodeMirror-lines, 
+.CodeMirror-scroll,
+.CodeMirror-scroll > div,
+.CodeMirror-scroll > div > div {
+  height: 100%
+}
+*/

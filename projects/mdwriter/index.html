@@ -3,31 +3,87 @@
     <head>
         <title>Markdown Writer</title>
         <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="./lib/codemirror/codemirror.css" />
+        <link rel="stylesheet" type="text/css" href="lib/codemirror/mdwriter.css" />
+        <link rel="stylesheet" type="text/css" href="./lib/antiscroll/antiscroll.css">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <link rel="stylesheet" type="text/css" href="css/codemirror.css" />
-        <link rel="stylesheet" type="text/css" href="css/elegant.css" />
         <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     </head>
     <body>
         <!--<div id="bg"><img src="images/bg0.jpg" id="bg-img"></div>-->
-        <div id="md-card" class="card">
-            <div id="md-border"></div>
-            <div class="scrollbar-mask">
-                <textarea id="md-text" class="scrollbar-offset">## Here is something you should know
-  1. you can</textarea>
+        <div id="editor_frame" class="editor-frame">
+            <div class="box-wrap antiscroll-wrap">
+                <div class="box">
+                    <div class="antiscroll-inner">
+                        <div class="box-inner">
+                            <textarea id="manual">## Here is something you should know
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                             1. you can
+                         </textarea>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div id="preview-card" class="card">
-            <div class="scrollbar-mask">
-                <div id="preview" class="scrollbar-offset"></div>
-            </div>
+        <div id="preview" class="editor-frame">
         </div>
 
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-        <script type="text/javascript" src="js/codemirror.js"></script>
-        <script type="text/javascript" src="js/xml.js"></script>
-        <script type="text/javascript" src="js/markdown.js"></script>
-        <script type="text/javascript" src="js/showdown.js"></script>
+        <script type="text/javascript" src="./lib/jquery/jquery.js"></script>
+        <script type="text/javascript" src="./lib/jquery/jquery-mousewheel.js"></script>
+        <script type="text/javascript" src="lib/codemirror/codemirror.js"></script>
+        <script type="text/javascript" src="lib/codemirror/xml.js"></script>
+        <script type="text/javascript" src="lib/codemirror/markdown.js"></script>
+        <script type="text/javascript" src="./lib/antiscroll/antiscroll.js"></script>
+        <script type="text/javascript" src="./lib/showdown/showdown.js"></script>
 
         <script type="text/javascript" src="js/gui.js"></script>
     </body>
