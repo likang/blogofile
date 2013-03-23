@@ -3,3 +3,4 @@ _site
 .svn
 .DS_Store
 *.swp
+*.sublime-project
